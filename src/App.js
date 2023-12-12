@@ -51,7 +51,7 @@ function App() {
         }
       ])
   }
-
+  //Remove single board 
   const removeBoard = bid =>{
     const tempBoards = boards.filter(items => items.id !== bid)
     setBoards(tempBoards);

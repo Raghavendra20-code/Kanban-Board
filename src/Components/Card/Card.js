@@ -22,7 +22,8 @@ const [showModal,setShowModal] = useState(false)
     <div className='card'
     draggable
     onDragEnd={()=> props.handleDragEnd(props.card?.id,props.boardId)}
-    onDragEnter={() => props.handleDragEnter(props.card?.id,props.boardId)}
+    onDragEnter={() =>
+        props.handleDragEnter(props.card?.id,props.boardId)}
     onClick={() =>setShowModal(true)}
     >
         
